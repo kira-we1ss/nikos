@@ -13,9 +13,4 @@
     wayland.enable = true;
   };
   services.desktopManager.plasma6.enable = true;
-
-  environment.sessionVariables = {
-    XDG_SESSION_TYPE = "wayland";
-    WAYLAND_DISPLAY = "wayland-0";
-  };
 }
