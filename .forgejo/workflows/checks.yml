@@ -20,7 +20,7 @@ jobs:
 
       - name: Full nixosConfiguration eval
         run: |
-          nix eval .#nixosConfigurations.xiaolong-nix.config.system.build.toplevel
+          nix eval .#nixosConfigurations.nikos.config.system.build.toplevel
 
       - name: Post-check cleanup
         if: always()
