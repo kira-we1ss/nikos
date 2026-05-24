@@ -35,12 +35,12 @@
           inherit helium;
           inherit kopuz;
         };
-        system = "x86_64-linux";
         modules = [
           (
             { ... }:
             {
               nixpkgs.overlays = [ nix-cachyos-kernel.overlays.pinned ];
+              nixpkgs.hostPlatform = "x86_64-linux";
             }
           )
           ./hardware-configuration.nix
