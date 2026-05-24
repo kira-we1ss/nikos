@@ -6,6 +6,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # CachyOS kernel
+  # Note for self: if you don't build the flake with the stock one first - it's gonna compile CachyOS one from source...
   boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
 
   # Cross-compilation support
